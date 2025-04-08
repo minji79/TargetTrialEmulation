@@ -566,7 +566,7 @@ s5 %>% select(NAID) %>% distinct() %>% count() # 7843
 
 names(s5)
 
-#Set censor date for survival analysis (2016-2023)
+#Set censor date for survival analysis (2016-2022)
 ac1 <- s5 %>% filter(ENCOUNTERYR >= 2016)
 ac1$DMSTOP_DT <- as.numeric(ac1$DMSTOP_DT)
 ac1$COHORT_CLOSEDATE <- as.numeric(ac1$COHORT_CLOSEDATE)
